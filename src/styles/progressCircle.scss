@@ -1,0 +1,47 @@
+:root {
+  --0-actions: polygon(50% 0, 50% 50%, 60% 0);
+  --1-actions: polygon(50% 0, 100% 0, 100% 13%, 50% 50%);
+  --2-actions: polygon(50% 0, 100% 0, 100% 70%, 50% 50%);
+  --3-actions: polygon(50% 0%, 100% 0, 100% 100%, 75% 100%, 50% 50%);
+  --4-actions: polygon(50% 0%, 100% 0, 100% 100%, 20% 100%, 50% 50%);
+  --5-actions: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 70%, 50% 50%);
+  --6-actions: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 20%, 50% 50%);
+  --7-actions: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: rgba(255, 255, 255, 0.5);
+
+  div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .outer {
+    background-color: #ffffff;
+    clip-path: var(--0-actions);
+  }
+
+  .inner {
+    font-family: Inter-Regular;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    transform: scale(0.95);
+    background-color: #3579F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+

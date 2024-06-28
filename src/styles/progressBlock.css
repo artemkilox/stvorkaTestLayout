@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../fonts/Inter-Regular.otf");
+}
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url("../fonts/Inter-SemiBold.otf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-wrapper .progress-block {
+  background-color: #3579F5;
+  width: 750px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-family: Inter-Regular;
+}
+.content-wrapper .progress-block .progress-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.content-wrapper .progress-block .progress-info .title {
+  padding: 0 15px;
+  background: #2364DB;
+  width: fit-content;
+  border-radius: 40px;
+  font-size: 12px;
+}
+.content-wrapper .progress-block .progress-info .complete-actions {
+  font-size: 15px;
+  font-family: Inter-SemiBold;
+}
+.content-wrapper .progress-block .progress-info .next-action {
+  font-size: 12px;
+}
+.content-wrapper .progress-block .checklistBtn {
+  margin-left: 50px;
+  font-size: 14px;
+  padding: 10px 15px;
+  background: #ffffff;
+  color: #4777ED;
+  border: none;
+  transition: 0.2s;
+  cursor: pointer;
+  width: 180px;
+  border-radius: 6px;
+}
+.content-wrapper .progress-block .checklistBtn:hover {
+  background: #072d8f;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=progressBlock.css.map */
